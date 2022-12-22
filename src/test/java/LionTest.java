@@ -36,7 +36,7 @@ public class LionTest {
         Lion lion = new Lion("Самец", feline);
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        List<String> actual = lion.getFood("Хищник");
+        List<String> actual = lion.getFood();
         Assert.assertEquals(expected, actual);
     }
     @Test

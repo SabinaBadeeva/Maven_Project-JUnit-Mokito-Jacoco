@@ -5,7 +5,7 @@ import java.util.List;
 public class Lion  {
 
     private
-    Feline feline;;
+    Feline feline;
     boolean hasMane;
 
 
@@ -29,15 +29,10 @@ public class Lion  {
         return hasMane;
     }
 
-    public List<String> getFood(String animalKind) throws Exception {
+    public List<String> getFood() throws Exception {
         return feline.getFood("Хищник");
     }
 }
 
 
-
-// Feline feline = new Feline();
-//public int getKittens() {return feline.getKittens();}
-//public boolean doesHaveMane() {return hasMane;}
-//public List<String> getFood() throws Exception {return feline.getFood("Хищник");}
 
